@@ -36,15 +36,15 @@ func _run():
 	var pin_i = 0
 	var bones = [
 		"Hips", 
-		"Chest", "UpperChest",
-		"LeftShoulder", "RightShoulder",
-		"LeftUpperArm", "RightUpperArm",
-		"LeftLowerArm", "RightLowerArm",
+#		"Chest", "UpperChest",
+#		"LeftShoulder", "RightShoulder",
+#		"LeftUpperArm", "RightUpperArm",
+#		"LeftLowerArm", "RightLowerArm",
 		"LeftHand", "RightHand", 
 		"Neck", "Head", 
 		"Spine",
-		"LeftUpperLeg", "RightUpperLeg",
-		"LeftLowerLeg", "RightLowerLeg",
+#		"LeftUpperLeg", "RightUpperLeg",
+#		"LeftLowerLeg", "RightLowerLeg",
 		"LeftFoot", "RightFoot"]
 	ewbik.pin_count = bones.size()
 	for bone_name in bones:
@@ -69,24 +69,25 @@ func _run():
 		var path_string : String = "../" + str(skeleton.get_path_to(root)) + "/" + bone_name
 		ewbik.set_pin_nodepath(pin_i, NodePath(path_string))
 		pin_i = pin_i + 1
-	ewbik.set_constraint_count(bones.size())
-	for constraint_i in range(bones.size()):
-		var bone_name : String = bones[constraint_i]
-		ewbik.set_constraint_name(constraint_i, bone_name)
-		ewbik.set_kusudama_twist(constraint_i, Vector2(0, 120))
-#		# https://pubmed.ncbi.nlm.nih.gov/32644411/
-		if bone_name in ["LeftHand", "LeftFoot"]:
-			ewbik.set_kusudama_twist(constraint_i, Vector2(0, 120))
-		if bone_name in ["RightFoot", "RightHand"]:
-			ewbik.set_kusudama_twist(constraint_i, Vector2(0, 120))
-		if bone_name in ["Chest", "UpperChest"]:
-			ewbik.set_kusudama_twist(constraint_i, Vector2(0, 50))
-		if bone_name in ["Hips"]:
-			ewbik.set_kusudama_twist(constraint_i, Vector2(30, -30))
-		if bone_name in ["Spine",]:
-			ewbik.set_kusudama_twist(constraint_i, Vector2(0, 1))
-		if bone_name in ["LeftShoulder", "RightShoulder",]:
-			ewbik.set_kusudama_twist(constraint_i, Vector2(0, 5))
+	# Female https://pubmed.ncbi.nlm.nih.gov/32644411/
+#	ewbik.set_constraint_count(bones.size())
+#	for constraint_i in range(bones.size()):
+#		var bone_name : String = bones[constraint_i]
+#		ewbik.set_constraint_name(constraint_i, bone_name)
+#		ewbik.set_kusudama_twist(constraint_i, Vector2(0, 120))
+##		# https://pubmed.ncbi.nlm.nih.gov/32644411/
+#		if bone_name in ["LeftHand", "LeftFoot"]:
+#			ewbik.set_kusudama_twist(constraint_i, Vector2(0, 120))
+#		if bone_name in ["RightFoot", "RightHand"]:
+#			ewbik.set_kusudama_twist(constraint_i, Vector2(0, 120))
+#		if bone_name in ["Chest", "UpperChest"]:
+#			ewbik.set_kusudama_twist(constraint_i, Vector2(0, 50))
+#		if bone_name in ["Hips"]:
+#			ewbik.set_kusudama_twist(constraint_i, Vector2(30, -30))
+#		if bone_name in ["Spine",]:
+#			ewbik.set_kusudama_twist(constraint_i, Vector2(0, 1))
+#		if bone_name in ["LeftShoulder", "RightShoulder",]:
+#			ewbik.set_kusudama_twist(constraint_i, Vector2(0, 5))
 #		ewbik.set_kusudama_limit_cone_count(constraint_i, 1)
 #		ewbik.set_kusudama_limit_cone_center(constraint_i, 0, Vector3(0, 1, 0))
 #		ewbik.set_kusudama_limit_cone_radius(constraint_i, 0, rad_to_deg(PI))
