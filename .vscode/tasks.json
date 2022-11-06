@@ -1,0 +1,20 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Windows",
+      "type": "shell",
+      "command": "scons target=editor bits=64 optimize=speed compiledb=yes test=yes platform=windows bits=64 use_mingw=yes use_llvm=yes use_thinlto=no warnings=no  LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' debug_symbols=no",
+      "options": {
+        "cwd": "${workspaceFolder}/godot"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+  ]
+}
