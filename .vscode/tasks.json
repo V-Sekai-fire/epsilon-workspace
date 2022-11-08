@@ -4,9 +4,9 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Windows",
+      "label": "Linux",
       "type": "shell",
-      "command": "scons target=editor bits=64 optimize=speed compiledb=yes test=yes platform=windows bits=64 use_mingw=yes use_llvm=yes use_thinlto=no debug_symbols=no",
+      "command": "scons devbuild=yes target=editor bits=64 compiledb=yes test=yes platform=linux bits=64",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },

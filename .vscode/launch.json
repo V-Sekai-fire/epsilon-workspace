@@ -10,8 +10,8 @@
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "args": ["--path", "demo", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.x86_64.llvm.console.exe",
-      "preLaunchTask": "Windows",
+      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.editor.x86_64.llvm.console.exe",
+      "preLaunchTask": "Linux",
     },
   ]
 }
