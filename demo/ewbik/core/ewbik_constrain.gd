@@ -69,16 +69,16 @@ func _run():
 		pin_i = pin_i + 1
 	var bone_constraints = [
 		"Hips", 
-#		"Chest", "UpperChest",
-#		"LeftShoulder", "RightShoulder",
-#		"LeftUpperArm", "RightUpperArm",
-#		"LeftLowerArm", "RightLowerArm",
-#		"LeftHand", "RightHand", 
-#		"Neck", "Head", 
-#		"Spine",
-#		"LeftUpperLeg", "RightUpperLeg",
+		"Chest", "UpperChest",
+		"LeftShoulder", "RightShoulder",
+		"LeftUpperArm", "RightUpperArm",
+		"LeftLowerArm", "RightLowerArm",
+		"LeftHand", "RightHand", 
+		"Neck", "Head", 
+		"Spine",
+		"LeftUpperLeg", "RightUpperLeg",
 		"LeftLowerLeg", "RightLowerLeg",
-#		"LeftFoot", "RightFoot"
+		"LeftFoot", "RightFoot"
 	]
 	# Female https://pubmed.ncbi.nlm.nih.gov/32644411/
 	ewbik.set_constraint_count(bone_constraints.size())
@@ -112,6 +112,7 @@ func _run():
 			ewbik.set_kusudama_twist(constraint_i, Vector2(0,  deg_to_rad(1)))
 		if bone_name in ["LeftShoulder", "RightShoulder",]:
 			ewbik.set_kusudama_twist(constraint_i, Vector2(0,  deg_to_rad(5)))
+			
 #		ewbik.set_kusudama_twist(constraint_i, Vector2(0, 120))
 #		ewbik.set_kusudama_limit_cone_count(constraint_i, 1)
 #		ewbik.set_kusudama_limit_cone_center(constraint_i, 0, Vector3(0, 1, 0))
