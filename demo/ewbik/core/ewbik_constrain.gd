@@ -88,29 +88,33 @@ func _run():
 #		# https://pubmed.ncbi.nlm.nih.gov/32644411/
 		if bone_name in ["LeftHand", "LeftFoot"]:
 			ewbik.set_kusudama_twist(constraint_i, Vector2(0, 120))
-		if bone_name in ["RightFoot", "RightHand"]:
+		elif bone_name in ["RightFoot", "RightHand"]:
 			ewbik.set_kusudama_twist(constraint_i, Vector2(0, 120))
-		if bone_name in ["RightLowerLeg"]:
+		elif bone_name in ["RightUpperLeg"]:
+			continue
+		elif bone_name in ["LeftUpperLeg"]:
+			continue
+		elif bone_name in ["RightLowerLeg"]:
 			ewbik.set_kusudama_limit_cone_count(constraint_i, 2)
 			ewbik.set_kusudama_limit_cone_center(constraint_i, 0, Vector3(0, 1, 0))
 			ewbik.set_kusudama_limit_cone_radius(constraint_i, 0, deg_to_rad(5))
 			ewbik.set_kusudama_limit_cone_center(constraint_i, 1, Vector3(1, 0, -1))
 			ewbik.set_kusudama_limit_cone_radius(constraint_i, 1, deg_to_rad(5))
 			continue
-		if bone_name in ["LeftLowerLeg"]:
+		elif bone_name in ["LeftLowerLeg"]:
 			ewbik.set_kusudama_limit_cone_count(constraint_i, 2)
 			ewbik.set_kusudama_limit_cone_center(constraint_i, 0, Vector3(0, 1, 0))
 			ewbik.set_kusudama_limit_cone_radius(constraint_i, 0, deg_to_rad(5))
 			ewbik.set_kusudama_limit_cone_center(constraint_i, 1, Vector3(1, 0, -1))
 			ewbik.set_kusudama_limit_cone_radius(constraint_i, 1, deg_to_rad(5))
 			continue
-		if bone_name in ["Chest", "UpperChest"]:
+		elif bone_name in ["Chest", "UpperChest"]:
 			ewbik.set_kusudama_twist(constraint_i, Vector2(0,  deg_to_rad(50)))
-		if bone_name in ["Hips"]:
+		elif bone_name in ["Hips"]:
 			ewbik.set_kusudama_twist(constraint_i, Vector2(30,  deg_to_rad(-30)))
-		if bone_name in ["Spine",]:
+		elif bone_name in ["Spine",]:
 			ewbik.set_kusudama_twist(constraint_i, Vector2(0,  deg_to_rad(1)))
-		if bone_name in ["LeftShoulder", "RightShoulder",]:
+		elif bone_name in ["LeftShoulder", "RightShoulder",]:
 			ewbik.set_kusudama_twist(constraint_i, Vector2(0,  deg_to_rad(5)))
 			
 #		ewbik.set_kusudama_twist(constraint_i, Vector2(0, 120))
