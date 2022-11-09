@@ -5,12 +5,31 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Launch editor Windows",
+      "name": "(gdb) Attach",
+      "type": "cppdbg",
+      "request": "attach",
+      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.editor.dev.x86_64.llvm",
+      "MIMode": "gdb",
+      "setupCommands": [
+          {
+              "description": "Enable pretty-printing for gdb",
+              "text": "-enable-pretty-printing",
+              "ignoreFailures": true
+          },
+          {
+              "description": "Set Disassembly Flavor to Intel",
+              "text": "-gdb-set disassembly-flavor intel",
+              "ignoreFailures": true
+          }
+      ]
+    },
+    {
+      "name": "Launch editor Linux",
       "type": "lldb",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "demo", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.editor.x86_64.llvm.console.exe",
+      "args": ["--path","demo","-e"],
+      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.editor.x86_64.llvm",
       "preLaunchTask": "Linux",
     },
   ]

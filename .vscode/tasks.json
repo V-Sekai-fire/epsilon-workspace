@@ -6,7 +6,8 @@
     {
       "label": "Linux",
       "type": "shell",
-      "command": "scons devbuild=yes target=editor bits=64 compiledb=yes test=yes platform=linux bits=64",
+      "command": "scons target=editor use_llvm=yes bits=64 compiledb=yes test=yes platform=linux bits=64",
+      // "command": "scons optimize=speed dev_build=yes debug_symbols=yes target=editor use_llvm=yes bits=64 compiledb=yes test=yes platform=linux bits=64",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
