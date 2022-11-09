@@ -41,10 +41,8 @@ bones/9/rotation = Quaternion(-0.00350441, 0.942412, 0.00119352, 0.334433)
 bones/9/scale = Vector3(1, 1, 1)
 bones/10/position = Vector3(-0.000113063, 0.101475, 9.799e-05)
 bones/10/rotation = Quaternion(-0.103391, 0.919857, -0.131249, 0.354891)
-bones/10/scale = Vector3(1, 1, 1)
 bones/11/position = Vector3(-2.27541e-05, 0.0985326, 6.94245e-05)
 bones/11/rotation = Quaternion(0.190866, 0.971009, 0.140704, 0.0302318)
-bones/11/scale = Vector3(1, 1, 1)
 
 [node name="o1" type="Marker3D" parent="Armature/Skeleton3D" index="1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.184184, 0, 0)
@@ -56,6 +54,11 @@ transform = Transform3D(0.999127, 0.0417939, 8.6755e-07, -0.0417939, 0.999126, -
 transform = Transform3D(0.894468, 0.447129, -4.35827e-07, -0.447131, 0.894469, -2.45855e-07, 2.16702e-07, 3.97163e-07, 1, 0.254847, 0.273782, 2.70253e-07)
 
 [node name="SkeletonModification3DEWBIK" type="SkeletonModification3DEWBIK" parent="Armature/Skeleton3D" index="2"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+editor_description = ""
 root_bone = &"A0"
 max_ik_iterations = 120.0
 pin_count = 4
@@ -85,3 +88,4 @@ constraints/0/kusudama_twist = Vector2(0, 360)
 constraints/0/kusudama_limit_cone_count = 1
 constraints/0/kusudama_limit_cone/0/center = Vector3(0, 1, 0)
 constraints/0/kusudama_limit_cone/0/radius = 0.174533
+script = null

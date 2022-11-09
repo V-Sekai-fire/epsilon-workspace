@@ -8,16 +8,15 @@
 bones/0/position = Vector3(-1.4013e-45, 0, 4.96705e-09)
 bones/0/rotation = Quaternion(0, 1.4013e-45, 0, 1)
 bones/1/position = Vector3(0, 0.600001, -2.98023e-08)
-bones/1/rotation = Quaternion(0.183621, 0.972335, -0.0187025, 0.143172)
-bones/1/scale = Vector3(1, 1, 1)
-bones/2/position = Vector3(0.00189193, 0.61843, 0.000532929)
-bones/2/rotation = Quaternion(0.17553, 0.65844, -0.459901, 0.56933)
+bones/1/rotation = Quaternion(-0.128098, 0.0587881, 0.0250586, 0.9897)
+bones/2/position = Vector3(0.00170751, 0.620123, 0.000145912)
+bones/2/rotation = Quaternion(-0.338905, -0.00196842, 0.0460571, 0.93969)
 bones/2/scale = Vector3(1, 1, 1)
-bones/3/position = Vector3(-0.000124902, 0.60597, 0.000304818)
-bones/3/rotation = Quaternion(0.261036, -0.548894, 0.114264, 0.785824)
+bones/3/position = Vector3(-0.000141054, 0.60693, 0.000236571)
+bones/3/rotation = Quaternion(-0.117996, 0.825286, -0.137539, 0.534848)
 bones/3/scale = Vector3(1, 1, 1)
-bones/4/position = Vector3(0.000464916, 0.604078, 0.000109315)
-bones/4/rotation = Quaternion(-0.403684, 0.649216, 0.139686, 0.629321)
+bones/4/position = Vector3(0.000546336, 0.605069, -0.000263184)
+bones/4/rotation = Quaternion(-0.614726, 0.761324, -0.0121279, 0.205796)
 bones/4/scale = Vector3(1, 1, 1)
 
 [node name="Simple_Test_Rig" parent="Simple_Test_Rig_Armature/Skeleton3D" index="0"]
@@ -38,24 +37,29 @@ pins/1/depth_falloff = 0.0
 pins/1/weight = 1.0
 pins/1/direction_priorities = Vector3(0.5, 0, 0.5)
 pins/2/name = ""
-pins/2/target_node = NodePath("")
+pins/2/target_node = NodePath("../2")
 pins/2/depth_falloff = 1.0
 pins/2/weight = 1.0
 pins/2/direction_priorities = Vector3(1, 0, 1)
-constraint_count = 1
+constraint_count = 2
 constraints/0/name = &"Bone_02"
 constraints/0/kusudama_twist = Vector2(0, 10)
 constraints/0/kusudama_limit_cone_count = 4
 constraints/0/kusudama_limit_cone/0/center = Vector3(0, 1, 0)
 constraints/0/kusudama_limit_cone/0/radius = 0.261799
 constraints/0/kusudama_limit_cone/1/center = Vector3(0, 0, 1)
-constraints/0/kusudama_limit_cone/1/radius = 0.174533
+constraints/0/kusudama_limit_cone/1/radius = 0.176278
 constraints/0/kusudama_limit_cone/2/center = Vector3(1, 0, 0)
 constraints/0/kusudama_limit_cone/2/radius = 0.174533
 constraints/0/kusudama_limit_cone/3/center = Vector3(0, 1, 0)
 constraints/0/kusudama_limit_cone/3/radius = 0.261799
+constraints/1/name = &"Bone_03"
+constraints/1/kusudama_twist = Vector2(0, 0)
+constraints/1/kusudama_limit_cone_count = 1
+constraints/1/kusudama_limit_cone/0/center = Vector3(0, 1, 0)
+constraints/1/kusudama_limit_cone/0/radius = 0.698132
 
 [node name="1" type="Marker3D" parent="Simple_Test_Rig_Armature/Skeleton3D" index="2"]
 
 [node name="2" type="Marker3D" parent="Simple_Test_Rig_Armature/Skeleton3D" index="3"]
-transform = Transform3D(-0.0200001, 0, -0.9998, 0, 1, 0, 0.9998, 0, -0.0200001, -0.551528, 2.03381, -0.099789)
+transform = Transform3D(0.00630064, 0, -0.99998, 0, 1, 0, 0.99998, 0, 0.00630064, -0.398046, 1.7851, -1.55511)

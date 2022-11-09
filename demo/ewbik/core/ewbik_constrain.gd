@@ -85,16 +85,9 @@ func _run():
 	for constraint_i in range(bone_constraints.size()):
 		var bone_name : String = bone_constraints[constraint_i]
 		ewbik.set_constraint_name(constraint_i, bone_name)
+		ewbik.set_kusudama_twist(constraint_i, Vector2(-720, 720))
 #		# https://pubmed.ncbi.nlm.nih.gov/32644411/
-		if bone_name in ["LeftHand", "LeftFoot"]:
-			ewbik.set_kusudama_twist(constraint_i, Vector2(0, 120))
-		elif bone_name in ["RightFoot", "RightHand"]:
-			ewbik.set_kusudama_twist(constraint_i, Vector2(0, 120))
-		elif bone_name in ["RightUpperLeg"]:
-			continue
-		elif bone_name in ["LeftUpperLeg"]:
-			continue
-		elif bone_name in ["RightLowerLeg"]:
+		if bone_name in ["RightLowerLeg"]:
 			ewbik.set_kusudama_limit_cone_count(constraint_i, 2)
 			ewbik.set_kusudama_limit_cone_center(constraint_i, 0, Vector3(0, 1, 0))
 			ewbik.set_kusudama_limit_cone_radius(constraint_i, 0, deg_to_rad(5))
