@@ -56,6 +56,8 @@ func _run():
 		node_3d.owner = root
 		ewbik.set_pin_bone_name(pin_i, bone_name)
 		ewbik.set_pin_depth_falloff(pin_i, 0.5)
+		if bone_name == "Hips":
+			ewbik.set_pin_depth_falloff(pin_i, 0)
 		ewbik.set_pin_direction_priorities(pin_i, Vector3(0.5, 0, 0.5).normalized())
 		var bone_id = skeleton.find_bone(bone_name)
 		if bone_id == -1:
