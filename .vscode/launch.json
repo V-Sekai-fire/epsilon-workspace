@@ -30,7 +30,7 @@
       "cwd": "${workspaceFolder}",
       "args": ["--path","demo","-e"],
       "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.editor.x86_64.llvm",
-      "preLaunchTask": "Linux",
+      // "preLaunchTask": "Linux",
     },
   ]
 }

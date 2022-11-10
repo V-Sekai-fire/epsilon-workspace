@@ -6,7 +6,7 @@
     {
       "label": "Linux",
       "type": "shell",
-      "command": "scons asan=yes werror=yes target=editor use_llvm=yes bits=64 compiledb=yes test=yes platform=linux bits=64",
+      "command": "scons asan=yes dev_build=yes werror=yes target=editor use_llvm=yes bits=64 compiledb=yes test=yes platform=linux bits=64",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
