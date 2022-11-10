@@ -25,12 +25,12 @@
     },
     {
       "name": "Launch editor Linux",
-      "type": "lldb",
+      "type": "cppdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "args": ["--path","demo","-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.editor.x86_64.llvm",
-      // "preLaunchTask": "Linux",
+      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.editor.dev.x86_64.llvm",
+      "preLaunchTask": "Linux",
     },
   ]
 }
