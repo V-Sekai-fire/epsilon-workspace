@@ -134,6 +134,14 @@ func _run():
 #		# https://pubmed.ncbi.nlm.nih.gov/32644411/
 		if bone_name.is_empty() in []:
 			pass
+#		elif bone_name in ["RightUpperLeg"]:
+#			ewbik.set_kusudama_limit_cone_count(constraint_i, 1)
+#			ewbik.set_kusudama_limit_cone_center(constraint_i, 0, Vector3(0, -1, -1))
+#			ewbik.set_kusudama_limit_cone_radius(constraint_i, 0, deg_to_rad(120))
+#		elif bone_name in ["LeftUpperLeg"]:
+#			ewbik.set_kusudama_limit_cone_count(constraint_i, 1)
+#			ewbik.set_kusudama_limit_cone_center(constraint_i, 0, Vector3(0, -1, -1))
+#			ewbik.set_kusudama_limit_cone_radius(constraint_i, 0, deg_to_rad(120))
 		elif bone_name in ["RightLowerLeg"]:
 			ewbik.set_kusudama_limit_cone_count(constraint_i, 3)
 			ewbik.set_kusudama_limit_cone_center(constraint_i, 0, Vector3(0, 1, 0))
