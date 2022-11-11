@@ -7,74 +7,83 @@
 [node name="GeneralSkeleton" parent="." index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.015626)
 bones/0/position = Vector3(0, 2.38419e-07, -0.015626)
-bones/0/rotation = Quaternion(4.07918e-13, 0, 0, 1)
-bones/10/rotation = Quaternion(-2.11259e-06, 1.04811e-06, -1.44047e-05, 1)
-bones/15/position = Vector3(3.92902e-10, 0.113012, 0.00304985)
-bones/15/rotation = Quaternion(2.98386e-06, -1.89723e-06, -1.7072e-05, 1)
-bones/16/position = Vector3(1.56433e-09, 0.107643, -0.0146465)
-bones/16/rotation = Quaternion(1.23597e-05, 7.51524e-05, -2.56491e-06, 1)
-bones/21/position = Vector3(-2.44472e-09, 0.132286, -0.0383571)
-bones/21/rotation = Quaternion(-3.18853e-05, -7.82462e-06, 0.000127842, 1)
-bones/21/scale = Vector3(1, 1, 1)
-bones/22/position = Vector3(-6.40284e-10, 0.073174, 0.00914871)
-bones/22/rotation = Quaternion(1.86521e-05, -6.65325e-05, -9.37596e-05, 1)
-bones/103/position = Vector3(0.0223959, 0.105661, -0.0299696)
-bones/103/rotation = Quaternion(-0.499967, -0.500041, -0.49999, 0.500003)
-bones/103/scale = Vector3(1, 1, 1)
-bones/104/position = Vector3(-1.45286e-07, 0.086164, -0.0122143)
-bones/104/rotation = Quaternion(5.32384e-05, 1, -2.94747e-05, -7.2163e-06)
-bones/105/position = Vector3(-2.98023e-08, 0.219848, 9.89437e-06)
-bones/105/rotation = Quaternion(1.42407e-05, -0.707093, -9.57513e-06, 0.707121)
+bones/0/rotation = Quaternion(2.4639e-12, 0, 0, 1)
+bones/1/rotation = Quaternion(5.12376e-12, 0, 0, 1)
+bones/10/rotation = Quaternion(0.000105205, -3.81538e-07, 2.41885e-06, 1)
+bones/15/position = Vector3(-2.09184e-11, 0.112979, 0.00305)
+bones/15/rotation = Quaternion(-8.37476e-05, 8.47966e-07, 1.61778e-06, 1)
+bones/16/position = Vector3(-8.6402e-11, 0.107664, -0.0146462)
+bones/16/rotation = Quaternion(-0.000375109, 0.00014618, 1.38768e-05, 1)
+bones/16/scale = Vector3(1, 1, 1)
+bones/21/position = Vector3(4.54747e-10, 0.132325, -0.038362)
+bones/21/rotation = Quaternion(0.000806255, 7.32253e-06, -0.000110604, 1)
+bones/22/position = Vector3(5.82077e-10, 0.0732231, 0.00915046)
+bones/22/rotation = Quaternion(-0.000452197, -0.000153996, 9.27288e-05, 1)
+bones/22/scale = Vector3(1, 1, 1)
+bones/103/position = Vector3(0.0223965, 0.105691, -0.0299723)
+bones/103/rotation = Quaternion(0.500076, 0.49993, 0.500076, -0.499918)
+bones/104/position = Vector3(4.84288e-08, 0.0861677, -0.012337)
+bones/104/rotation = Quaternion(0.000129563, 1, 0.000177371, 6.80605e-05)
+bones/104/scale = Vector3(1, 1, 1)
+bones/105/position = Vector3(5.58794e-08, 0.219864, -1.3113e-06)
+bones/105/rotation = Quaternion(-1.24827e-05, -0.707093, 0.000278216, 0.707121)
 bones/105/scale = Vector3(1, 1, 1)
-bones/106/position = Vector3(-1.91927e-05, 0.214667, 0.000375871)
-bones/106/rotation = Quaternion(-3.48888e-05, 0.707084, 1.724e-05, 0.70713)
-bones/122/position = Vector3(-0.0223959, 0.105674, -0.0299695)
-bones/122/rotation = Quaternion(-0.500002, 0.500003, 0.499995, 0.5)
-bones/123/position = Vector3(7.82311e-08, 0.0861639, -0.0121684)
-bones/123/rotation = Quaternion(7.23631e-05, 1, -5.70729e-05, 5.32778e-05)
-bones/124/position = Vector3(1.15484e-07, 0.219851, 2.26498e-06)
-bones/124/rotation = Quaternion(0.00011191, 0.707106, 0.000168759, 0.707107)
-bones/124/scale = Vector3(1, 1, 1)
-bones/125/position = Vector3(2.15769e-05, 0.21469, 0.000376046)
-bones/125/rotation = Quaternion(-0.000125888, -0.707063, -0.000183088, 0.707151)
+bones/106/position = Vector3(-5.48363e-06, 0.214701, 0.000376135)
+bones/106/rotation = Quaternion(5.11011e-05, 0.707394, -0.0003007, 0.706819)
+bones/106/scale = Vector3(1, 1, 1)
+bones/122/position = Vector3(-0.0223966, 0.105725, -0.0299727)
+bones/122/rotation = Quaternion(-0.500074, 0.499907, 0.500074, 0.499945)
+bones/122/scale = Vector3(1, 1, 1)
+bones/123/position = Vector3(-1.93715e-07, 0.0861665, -0.0123211)
+bones/123/rotation = Quaternion(8.68754e-05, 1, 0.000160156, -3.41973e-05)
+bones/124/position = Vector3(-2.98023e-08, 0.219854, 1.19209e-06)
+bones/124/rotation = Quaternion(-0.000206094, 0.707107, -0.000129489, 0.707107)
+bones/125/position = Vector3(-5.96046e-06, 0.214683, 0.000376061)
+bones/125/rotation = Quaternion(0.000172793, -0.707368, 0.000154186, 0.706846)
 bones/125/scale = Vector3(1, 1, 1)
-bones/141/rotation = Quaternion(-0.461221, 0.0484438, 0.866508, -0.184641)
-bones/141/scale = Vector3(1, 1, 1)
-bones/150/position = Vector3(-1.69873e-06, 0.352904, -0.00738718)
-bones/150/rotation = Quaternion(0.0116023, 0.498097, 0.08638, 0.86273)
-bones/150/scale = Vector3(1, 1, 1)
-bones/158/position = Vector3(1.50502e-06, 0.414769, 0.0249406)
-bones/158/rotation = Quaternion(-0.303016, 0.803905, -0.348415, -0.374867)
+bones/141/rotation = Quaternion(-0.638726, -0.013319, 0.739144, -0.21335)
+bones/150/position = Vector3(1.29938e-05, 0.35294, -0.00738892)
+bones/150/rotation = Quaternion(-0.00401853, 0.257834, 0.0870631, 0.96225)
+bones/158/position = Vector3(-3.23355e-06, 0.414789, 0.0249389)
+bones/158/rotation = Quaternion(-0.319198, 0.803905, -0.333653, -0.374867)
 bones/158/scale = Vector3(1, 1, 1)
-bones/160/rotation = Quaternion(-0.337953, 0.336537, 0.878849, 0.0124543)
-bones/169/position = Vector3(7.22706e-07, 0.352906, -0.00738603)
-bones/169/rotation = Quaternion(-0.0191143, 0.344219, -0.0190492, 0.938501)
+bones/160/rotation = Quaternion(-0.519911, 0.338807, 0.782829, -0.0456211)
+bones/169/position = Vector3(8.25524e-06, 0.352918, -0.00738052)
+bones/169/rotation = Quaternion(-0.039475, 0.220168, 0.00429792, 0.974653)
 bones/169/scale = Vector3(1, 1, 1)
-bones/177/position = Vector3(8.9407e-07, 0.414757, 0.0249379)
-bones/177/rotation = Quaternion(0.234514, -0.538978, 0.332597, 0.737485)
-bones/177/scale = Vector3(1, 1, 1)
+bones/177/position = Vector3(1.19209e-07, 0.414777, 0.024939)
+bones/177/rotation = Quaternion(0.204446, -0.608462, 0.327037, 0.693558)
 
 [node name="BoneAttachment3D" parent="GeneralSkeleton" index="0"]
-transform = Transform3D(1, 2.88094e-05, 2.09628e-06, -2.88094e-05, 1, 4.22514e-06, -2.09616e-06, -4.2252e-06, 1, -0.163453, 1.33799, -0.0942837)
+transform = Transform3D(1, -4.83777e-06, -7.62568e-07, 4.83761e-06, 1, -0.000210409, 7.63586e-07, 0.000210409, 1, -0.163465, 1.33801, -0.0942049)
 visible = false
 bone_idx = 14
 
 [node name="BoneAttachment3D2" parent="GeneralSkeleton" index="1"]
-transform = Transform3D(1, 2.88094e-05, 2.09628e-06, -2.88094e-05, 1, 4.22514e-06, -2.09616e-06, -4.2252e-06, 1, -0.163453, 1.33799, -0.0942837)
+transform = Transform3D(1, -4.83777e-06, -7.62568e-07, 4.83761e-06, 1, -0.000210409, 7.63586e-07, 0.000210409, 1, -0.163465, 1.33801, -0.0942049)
 visible = false
 bone_idx = 14
 
 [node name="BoneAttachment3D3" parent="GeneralSkeleton" index="2"]
-transform = Transform3D(1, 2.88094e-05, 2.09628e-06, -2.88094e-05, 1, 4.22514e-06, -2.09616e-06, -4.2252e-06, 1, -0.163453, 1.33799, -0.0942837)
+transform = Transform3D(1, -4.83777e-06, -7.62568e-07, 4.83761e-06, 1, -0.000210409, 7.63586e-07, 0.000210409, 1, -0.163465, 1.33801, -0.0942049)
 visible = false
 bone_idx = 14
 
 [node name="BoneAttachment3D4" parent="GeneralSkeleton" index="3"]
-transform = Transform3D(1, 2.88094e-05, 2.09628e-06, -2.88094e-05, 1, 4.22514e-06, -2.09616e-06, -4.2252e-06, 1, -0.163453, 1.33799, -0.0942837)
+transform = Transform3D(1, -4.83777e-06, -7.62568e-07, 4.83761e-06, 1, -0.000210409, 7.63586e-07, 0.000210409, 1, -0.163465, 1.33801, -0.0942049)
 visible = false
 bone_idx = 14
 
-[node name="SkeletonModification3DNBoneIK" type="SkeletonModification3DNBoneIK" parent="GeneralSkeleton" index="7"]
+[node name="Face" parent="GeneralSkeleton" index="4"]
+visible = false
+
+[node name="Body" parent="GeneralSkeleton" index="5"]
+visible = false
+
+[node name="Hair" parent="GeneralSkeleton" index="6"]
+visible = false
+
+[node name="SkeletonModification3DNBoneIK" type="SkeletonModification3DNBoneIK" parent="GeneralSkeleton" index="8"]
 root_bone = &"Root"
 pin_count = 6
 pins/0/name = "Hips"
@@ -331,8 +340,8 @@ constraints/47/kusudama_limit_cone_count = 1
 constraints/47/kusudama_limit_cone/0/center = Vector3(0, -1, 0)
 constraints/47/kusudama_limit_cone/0/radius = 2.0944
 constraints/48/name = &"LeftLowerLeg"
-constraints/48/kusudama_twist_from = -0.523599
-constraints/48/kusudama_twist_to = 1.5708
+constraints/48/kusudama_twist_from = 0.523599
+constraints/48/kusudama_twist_to = 0.0
 constraints/48/kusudama_limit_cone_count = 3
 constraints/48/kusudama_limit_cone/0/center = Vector3(0, 1, 0)
 constraints/48/kusudama_limit_cone/0/radius = 0.0872665
@@ -359,8 +368,8 @@ constraints/51/kusudama_limit_cone_count = 1
 constraints/51/kusudama_limit_cone/0/center = Vector3(0, -1, 0)
 constraints/51/kusudama_limit_cone/0/radius = 2.0944
 constraints/52/name = &"RightLowerLeg"
-constraints/52/kusudama_twist_from = -0.523599
-constraints/52/kusudama_twist_to = 1.5708
+constraints/52/kusudama_twist_from = 0.0
+constraints/52/kusudama_twist_to = 0.523599
 constraints/52/kusudama_limit_cone_count = 3
 constraints/52/kusudama_limit_cone/0/center = Vector3(0, 1, 0)
 constraints/52/kusudama_limit_cone/0/radius = 0.0872665
@@ -394,7 +403,7 @@ transform = Transform3D(0, -1, 0, 0, 0, -1, 1, 0, 0, -0.543094, 1.28289, -0.0250
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.39492, -0.0247111)
 
 [node name="LeftFoot" type="Node3D" parent="." index="7"]
-transform = Transform3D(-1, 0, 0, 0, 0, 1, 0, 1, 0, 0.287875, 0.109307, 0.183721)
+transform = Transform3D(-1, 0, 0, 0, 0.104806, 0.994493, 0, 0.994493, -0.104806, 0.287875, 0.25484, 0.0890093)
 
 [node name="RightFoot" type="Node3D" parent="." index="8"]
-transform = Transform3D(-1, 0, 0, 0, -0.166769, 0.985996, 0, 0.985996, 0.166769, -0.284364, 0.269337, 0.430023)
+transform = Transform3D(-1, 0, 0, 0, -0.166769, 0.985996, 0, 0.985996, 0.166769, -0.284364, 0.26578, 0.451055)

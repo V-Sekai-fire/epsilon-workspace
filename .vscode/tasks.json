@@ -6,8 +6,7 @@
     {
       "label": "Windows",
       "type": "shell",
-      // dev_build=yes
-      "command": "scons target=editor bits=64 compiledb=yes warning=no test=yes debug_symbols=no platform=windows bits=64 use_mingw=yes use_llvm=yes use_thinlto=no warnings=no  LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' debug_symbols=no",
+      "command": "scons target=editor bits=64 use_mingw=yes use_llvm=yes werror=yes warnings=all compiledb=yes warning=no test=yes debug_symbols=no platform=windows bits=64 use_thinlto=no warnings=no  LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' debug_symbols=no",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
@@ -16,6 +15,14 @@
         "isDefault": true
       },
       "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "docs",
+      "path": "godot/platform/web",
+      "problemMatcher": [],
+      "label": "npm: docs - godot/platform/web",
+      "detail": "jsdoc --template js/jsdoc2rst/ js/engine/engine.js js/engine/config.js js/engine/features.js --destination ''"
     }
   ]
 }
