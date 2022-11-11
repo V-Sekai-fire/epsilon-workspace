@@ -4,9 +4,9 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Linux",
+      "label": "Windows",
       "type": "shell",
-      "command": "scons dev_build=yes werror=yes target=editor use_llvm=yes bits=64 compiledb=yes test=yes platform=linux bits=64",
+      "command": "scons target=editor bits=64 optimize=speed compiledb=yes warning=no test=yes debug_symbols=no platform=windows dev_build=yes bits=64 use_mingw=yes use_llvm=yes use_thinlto=no warnings=no  LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' debug_symbols=no",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
@@ -14,7 +14,7 @@
         "kind": "build",
         "isDefault": true
       },
-      "problemMatcher": ["$gcc"]
-    }
+      "problemMatcher": []
+    },
   ]
 }
