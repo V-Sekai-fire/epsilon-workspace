@@ -5,7 +5,7 @@ extends Node3D
 @export var collider_groups: Array
 
 var update_secondary_fixed: bool = false
-var update_in_editor: bool = true
+var update_in_editor: bool = false
 
 # Props
 var spring_bones_internal: Array = []

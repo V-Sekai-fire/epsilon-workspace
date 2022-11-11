@@ -20,7 +20,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="SkeletonModification3DEWBIK Game Project"
+config/name="NBoneIK Game Project"
 run/main_scene="res://ewbik/scenes/male.tscn"
 config/features=PackedStringArray("4.0")
 config/icon="res://icon.png"
