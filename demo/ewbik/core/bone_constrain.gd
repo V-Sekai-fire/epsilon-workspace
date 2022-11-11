@@ -155,8 +155,11 @@ func _run():
 			ewbik.set_kusudama_limit_cone_center(constraint_i, 0, Vector3(0, 1, 0))
 			ewbik.set_kusudama_limit_cone_radius(constraint_i, 0, deg_to_rad(30))
 			ewbik.set_kusudama_twist(constraint_i, Vector2(deg_to_rad(-1), deg_to_rad(1)))
-#		elif bone_name in ["Hips"]:
-#			ewbik.set_kusudama_twist(constraint_i, Vector2(30,  deg_to_rad(-30)))
+		elif bone_name in ["Hips"]:
+			ewbik.set_kusudama_limit_cone_count(constraint_i, 1)
+			ewbik.set_kusudama_limit_cone_center(constraint_i, 0, Vector3(0, 1, 0))
+			ewbik.set_kusudama_limit_cone_radius(constraint_i, 0, deg_to_rad(5))
+			ewbik.set_kusudama_twist(constraint_i, Vector2(deg_to_rad(90), deg_to_rad(-90)))
 		elif bone_name in ["Spine"]:
 			ewbik.set_kusudama_limit_cone_count(constraint_i, 1)
 			ewbik.set_kusudama_limit_cone_center(constraint_i, 0, Vector3(0, 1, 0))
