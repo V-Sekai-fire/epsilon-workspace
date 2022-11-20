@@ -1,6 +1,3 @@
 [submodule "godot"]
 	path = godot
 	url = https://github.com/V-Sekai/godot.git
-[submodule "modules/ewbik"]
-	path = modules/ewbik
-	url = https://github.com/V-Sekai/ewbik.git
