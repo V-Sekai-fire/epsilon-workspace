@@ -5,13 +5,22 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Launch editor",
+      "name": "Launch editor debug",
       "type": "cppvsdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "args": ["--path","modules/ewbik/demo","-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.x86_64.llvm.exe",
-      "preLaunchTask": "Windows",
+      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.dev.x86_64.llvm.exe",
+      "preLaunchTask": "Windows Debug",
+    },
+    {
+      "name": "Launch editor release",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "args": ["--path","modules/ewbik/demo","-e"],
+      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.dev.x86_64.llvm.exe",
+      "preLaunchTask": "Windows Release",
     },
   ]
 }
