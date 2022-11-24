@@ -120,7 +120,8 @@
         "__string": "cpp",
         "__threading_support": "cpp",
         "__availability": "cpp",
-        "ranges": "cpp"
+        "ranges": "cpp",
+        "__memory": "cpp"
     },
     "python.formatting.provider": "black",
     "cmake.configureOnOpen": true,

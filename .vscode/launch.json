@@ -9,9 +9,18 @@
       "type": "cppvsdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path","modules/ewbik/demo","-e"],
+      "args": ["--path","C:/Users/ernes/Documents/VSK_model_explorer", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.editor.dev.x86_64.llvm.exe",
       "preLaunchTask": "Windows Debug",
+    },
+    {
+      "name": "Launch editor debug template",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "args": ["--path","C:/Users/ernes/Documents/VSK_model_explorer", "-e"],
+      "program": "${workspaceFolder}/godot/bin/godot.windows.template_debug.dev.x86_64.llvm.console.exe",
+      "preLaunchTask": "Windows Debug Template",
     },
     {
       "name": "Launch editor release",
@@ -19,8 +28,17 @@
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "args": ["--path","modules/ewbik/demo","-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.dev.x86_64.llvm.exe",
+      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.x86_64.llvm.exe",
       "preLaunchTask": "Windows Release",
+    },
+    {
+      "name": "Launch editor release template",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "args": ["--path","C:/Users/ernes/Documents/VSK_model_explorer", "-e"],
+      "program": "${workspaceFolder}/godot/bin/godot.windows.template_release.dev.x86_64.llvm.console.exe",
+      "preLaunchTask": "Windows Release Template",
     },
   ]
 }
