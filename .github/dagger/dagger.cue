@@ -206,7 +206,6 @@ dagger.#Plan & {
 					cd /v-sekai-game/godot
 					cp bin/godot.windows.editor.x86_64.llvm.exe bin/windows_release_x86_64.exe 
 					mingw-strip --strip-debug bin/windows_release_x86_64.exe
-					cp bin/godot.windows.editor.x86_64.llvm.pdb bin/windows_release_x86_64.pdb
 					cp bin/godot.linuxbsd.editor.x86_64.llvm bin/linux_debug.x86_64.llvm
 					cp bin/godot.linuxbsd.editor.x86_64.llvm bin/linux_editor.x86_64
 					cp bin/godot.linuxbsd.editor.x86_64.llvm bin/linux_release.x86_64.llvm && cp bin/godot.linuxbsd.editor.x86_64.llvm bin/linux_release.x86_64 && strip --strip-debug bin/linux_release.x86_64
@@ -233,7 +232,7 @@ dagger.#Plan & {
 					# End todo.
 					rm -rf /v-sekai-game/.godot
 					cp /v-sekai-game/godot/bin/windows_release_x86_64.exe /v-sekai-game/build/windows_release_x86_64.exe
-					cp /v-sekai-game/godot/bin/windows_release_x86_64.pdb /v-sekai-game/build/windows_release_x86_64.pdb
+					cp /v-sekai-game/godot/bin/godot.windows.editor.x86_64.llvm.pdb /v-sekai-game/build/godot.windows.editor.x86_64.llvm.pdb
 					cp /v-sekai-game/godot/bin/linux_release.x86_64 /v-sekai-game/build/linux_release.x86_64
 					#mkdir -p /v-sekai-game/build/windows_release_x86_64/ && mkdir -p /v-sekai-game/project/.godot/editor && mkdir -p /v-sekai-game/project/.godot/imported && chmod +x /v-sekai-game/godot/bin/linux_editor.x86_64 && XDG_DATA_HOME=/v-sekai-game/.local/share/ /v-sekai-game/godot/bin/linux_editor.x86_64 --headless --export-release "Windows Desktop" /v-sekai-game/build/windows_release_x86_64/${GODOT_ENGINE_GAME_NAME}windows.exe --path /v-sekai-game/project && [ -f /v-sekai-game/build/windows_release_x86_64/${GODOT_ENGINE_GAME_NAME}windows.exe ]
 					#cp /v-sekai-game/godot/bin/windows_release_x86_64.pdb /v-sekai-game/build/windows_release_x86_64/${GODOT_ENGINE_GAME_NAME}windows.pdb
