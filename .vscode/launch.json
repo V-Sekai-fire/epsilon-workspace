@@ -39,7 +39,7 @@
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "args": ["--path","modules/ewbik/demo","-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.template_release.dev.x86_64.llvm.console.exe",
+      "program": "${workspaceFolder}/godot/bin/godot.windows.template_release.x86_64.llvm.console.exe",
       "preLaunchTask": "Windows Release Template",
     },
   ]
