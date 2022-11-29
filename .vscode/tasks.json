@@ -54,6 +54,19 @@
         "isDefault": true
       },
       "problemMatcher": []
+    },
+    {
+      "label": "Javascript Release Template",
+      "type": "shell",
+      "command": "scons target=template_release bits=64 use_mingw=yes use_llvm=yes werror=yes warnings=all dev_build=no compiledb=yes warning=no test=yes debug_symbols=yes platform=web bits=64 use_thinlto=no warnings=no debug_symbols=no custom_modules=../modules",
+      "options": {
+        "cwd": "${workspaceFolder}/godot"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
     }
   ]
 }
