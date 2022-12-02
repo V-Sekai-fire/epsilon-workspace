@@ -125,7 +125,9 @@
         "cfenv": "cpp",
         "scoped_allocator": "cpp",
         "__bits": "cpp",
-        "__verbose_abort": "cpp"
+        "__verbose_abort": "cpp",
+        "spmemvfs.h": "c",
+        "stdint.h": "c"
     },
     "python.formatting.provider": "black",
     "cmake.configureOnOpen": true,
