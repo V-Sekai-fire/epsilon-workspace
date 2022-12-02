@@ -1,9 +1,11 @@
 [submodule "godot"]
 	path = godot
 	url = https://github.com/V-Sekai/godot.git
+	branch = groups-4.x
 [submodule "modules"]
 	path = modules
 	url = https://github.com/V-Sekai/godot-modules-groups.git
+	branch = main
 [submodule "game"]
 	path = game
 	url = https://github.com/V-Sekai/v-sekai-game.git
