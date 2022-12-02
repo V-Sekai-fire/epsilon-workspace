@@ -121,7 +121,11 @@
         "__threading_support": "cpp",
         "__availability": "cpp",
         "ranges": "cpp",
-        "__memory": "cpp"
+        "__memory": "cpp",
+        "cfenv": "cpp",
+        "scoped_allocator": "cpp",
+        "__bits": "cpp",
+        "__verbose_abort": "cpp"
     },
     "python.formatting.provider": "black",
     "cmake.configureOnOpen": true,
