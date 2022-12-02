@@ -7,40 +7,40 @@
   // "args": ["--path","modules/many_bone_ik/demo","-e"],
   "configurations": [
     {
-      "name": "Launch editor debug",
+      "name": "Build the editor debug",
       "type": "cppvsdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path","modules/many_bone_ik/demo","-e"],
+      "args": ["--path", "game", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.editor.dev.x86_64.llvm.exe",
-      "preLaunchTask": "Windows Debug",
+      "preLaunchTask": "Windows Debug"
     },
     {
-      "name": "Launch editor debug template",
+      "name": "Build the editor debug template",
       "type": "cppvsdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path","modules/many_bone_ik/demo","-e"],
+      "args": ["--path", "game", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.template_debug.dev.x86_64.llvm.console.exe",
-      "preLaunchTask": "Windows Debug Template",
+      "preLaunchTask": "Windows Debug Template"
     },
     {
-      "name": "Launch editor release",
+      "name": "Build the editor release",
       "type": "cppvsdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path","modules/many_bone_ik/demo","-e"],
+      "args": ["--path", "game", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.editor.x86_64.llvm.exe",
-      "preLaunchTask": "Windows Release",
+      "preLaunchTask": "Windows Release"
     },
     {
-      "name": "Launch editor release template",
+      "name": "Build the editor release template",
       "type": "cppvsdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path","modules/many_bone_ik/demo","-e"],
+      "args": ["--path", "game", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.template_release.x86_64.llvm.console.exe",
-      "preLaunchTask": "Windows Release Template",
-    },
+      "preLaunchTask": "Windows Release Template"
+    }
   ]
 }
