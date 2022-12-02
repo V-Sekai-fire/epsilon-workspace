@@ -3,15 +3,13 @@
   // Hover to view descriptions of existing attributes.
   // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
-  // "args": ["--path","C:/Users/ernes/Documents/VSK_model_explorer","-e"],
-  // "args": ["--path","modules/many_bone_ik/demo","-e"],
   "configurations": [
     {
       "name": "Build the editor debug",
       "type": "cppvsdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "game", "-e"],
+      "args": ["--path", "modules/speech/demo", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.editor.dev.x86_64.llvm.exe",
       "preLaunchTask": "Windows Debug"
     },
@@ -20,7 +18,7 @@
       "type": "cppvsdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "game", "-e"],
+      "args": ["--path", "modules/speech/demo", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.editor.x86_64.llvm.exe",
       "preLaunchTask": "Windows Release"
     },
@@ -29,7 +27,7 @@
       "type": "cppvsdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "game", "-e"],
+      "args": ["--path", "modules/speech/demo", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.template_release.x86_64.llvm.console.exe",
       "preLaunchTask": "Windows Release Template"
     },
@@ -38,7 +36,7 @@
       "type": "cppvsdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "game", "-e"],
+      "args": ["--path", "modules/speech/demo", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.template_debug.dev.x86_64.llvm.console.exe",
       "preLaunchTask": "Windows Debug Template"
     },
