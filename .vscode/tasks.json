@@ -15,10 +15,6 @@
         "dagger project update"
       ],
       "problemMatcher": [],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      }
     },
     {
       "label": "dagger project init",
@@ -37,8 +33,7 @@
       "options": {
         "cwd": "${workspaceFolder}/game/.github/dagger"
       },
-      "problemMatcher": [],
-      "group": "build"
+      "problemMatcher": ["$gcc"]
     },
     {
       "label": "Windows Debug",
@@ -47,11 +42,7 @@
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
-      "problemMatcher": []
+      "problemMatcher": ["$gcc"]
     },
     {
       "label": "Windows Debug Template",
@@ -60,11 +51,7 @@
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
-      "problemMatcher": []
+      "problemMatcher": ["$gcc"]
     },
     {
       "label": "Windows Release",
@@ -77,7 +64,7 @@
         "kind": "build",
         "isDefault": true
       },
-      "problemMatcher": []
+      "problemMatcher": ["$gcc"]
     },
     {
       "label": "Windows Release Template",
@@ -86,11 +73,7 @@
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
-      "problemMatcher": []
+      "problemMatcher": ["$gcc"]
     },
     {
       "label": "Javascript Release Template",
@@ -99,11 +82,7 @@
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
-      "problemMatcher": []
+      "problemMatcher": ["$gcc"]
     }
   ]
 }
