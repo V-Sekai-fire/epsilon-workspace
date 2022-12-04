@@ -2,19 +2,36 @@
   // See https://go.microsoft.com/fwlink/?LinkId=733558
   // for the documentation about the tasks.json format
   "version": "2.0.0",
+  "options": {
+      "env": {
+        "SCONS_CACHE": "${workspaceFolder}/game/build/.cicd_cache"
+      }
+   },
   "tasks": [
+    {
+      "label": "Clean output folder",
+      "type": "shell",
+      "command": "rm -r game/build",
+      "problemMatcher": [],
+      "group": "build"
+    },
     {
       "label": "dagger do build",
       "type": "shell",
-      "command": "dagger-cue do build  --cache-to type=local,mode=max,dest=.dagger_storage --cache-from type=local,mode=max,src=.dagger_storage",
+      "command": "dagger-cue do build --cache-to type=local,mode=max,dest=.dagger_storage --cache-from type=local,mode=max,src=.dagger_storage",
       "options": {
         "cwd": "${workspaceFolder}/game/.github/dagger"
       },
       "dependsOn": [
         "dagger project init",
-        "dagger project update"
+        "dagger project update",
+        "Clean output folder",
       ],
       "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
     },
     {
       "label": "dagger project init",
@@ -33,7 +50,9 @@
       "options": {
         "cwd": "${workspaceFolder}/game/.github/dagger"
       },
-      "problemMatcher": ["$gcc"]
+      "problemMatcher": [
+        "$gcc"
+      ]
     },
     {
       "label": "Windows Debug",
@@ -42,7 +61,9 @@
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "problemMatcher": ["$gcc"]
+      "problemMatcher": [
+        "$gcc"
+      ]
     },
     {
       "label": "Windows Debug Template",
@@ -51,20 +72,21 @@
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "problemMatcher": ["$gcc"]
+      "problemMatcher": [
+        "$gcc"
+      ]
     },
     {
       "label": "Windows Release",
       "type": "shell",
-      "command": "scons target=editor bits=64 use_mingw=yes use_llvm=yes werror=yes warnings=all dev_build=no compiledb=yes warning=no test=yes debug_symbols=yes platform=windows bits=64 use_thinlto=no warnings=no  LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' debug_symbols=no custom_modules=../modules",
+      "command": "scons optimize=speed werror=no platform=windows target=editor use_fastlto=no deprecated=no use_mingw=yes use_llvm=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-Wall -Wno-tautological-compare -g -gcodeview' debug_symbols=no custom_modules=../modules",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
-      "problemMatcher": ["$gcc"]
+      "group": "build",
+      "problemMatcher": [
+        "$gcc"
+      ]
     },
     {
       "label": "Windows Release Template",
@@ -73,7 +95,9 @@
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "problemMatcher": ["$gcc"]
+      "problemMatcher": [
+        "$gcc"
+      ]
     },
     {
       "label": "Javascript Release Template",
@@ -82,7 +106,10 @@
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "problemMatcher": ["$gcc"]
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build"
     }
   ]
 }
