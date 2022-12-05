@@ -12,7 +12,7 @@
       "environment": [
         { "RUST_LOG": "info", "MVSQLITE_DATA_PLANE": "http://localhost:7000" }
       ],
-      "args": ["--path", "game", "-e"],
+      "args": ["--path", "modules/many_bone_ik/demo", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.editor.dev.x86_64.llvm.exe",
       "preLaunchTask": "Windows Debug"
     },
@@ -25,7 +25,7 @@
         { "name": "RUST_LOG", "value": "info" },
         { "name": "MVSQLITE_DATA_PLANE", "value": "http://localhost:7000" },
       ],
-      "args": ["--path", "game", "-e"],
+      "args": ["--path", "modules/many_bone_ik/demo", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.editor.x86_64.llvm.exe",
       "preLaunchTask": "Windows Release"
     },
@@ -37,7 +37,7 @@
       "environment": [
         { "RUST_LOG": "info", "MVSQLITE_DATA_PLANE": "http://localhost:7000" }
       ],
-      "args": ["--path", "game", "-e"],
+      "args": ["--path", "modules/many_bone_ik/demo", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.template_release.x86_64.llvm.console.exe",
       "preLaunchTask": "Windows Release Template"
     },
