@@ -9,10 +9,7 @@
       "type": "cppvsdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "environment": [
-        { "RUST_LOG": "info", "MVSQLITE_DATA_PLANE": "http://localhost:7000" }
-      ],
-      "args": ["--path", "modules/many_bone_ik/demo", "-e"],
+      "args": ["--path", "game", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.editor.dev.x86_64.llvm.exe",
       "preLaunchTask": "Windows Debug"
     },
@@ -21,37 +18,9 @@
       "type": "cppvsdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "environment": [
-        { "name": "RUST_LOG", "value": "info" },
-        { "name": "MVSQLITE_DATA_PLANE", "value": "http://localhost:7000" },
-      ],
-      "args": ["--path", "modules/many_bone_ik/demo", "-e"],
+      "args": ["--path", "game", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.editor.x86_64.llvm.exe",
       "preLaunchTask": "Windows Release"
     },
-    {
-      "name": "Build the editor release template",
-      "type": "cppvsdbg",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "environment": [
-        { "RUST_LOG": "info", "MVSQLITE_DATA_PLANE": "http://localhost:7000" }
-      ],
-      "args": ["--path", "modules/many_bone_ik/demo", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.template_release.x86_64.llvm.console.exe",
-      "preLaunchTask": "Windows Release Template"
-    },
-    {
-      "name": "Build the editor debug template",
-      "type": "cppvsdbg",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "environment": [
-        { "RUST_LOG": "info", "MVSQLITE_DATA_PLANE": "http://localhost:7000" }
-      ],
-      "args": ["--path", "game", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.template_debug.dev.x86_64.llvm.console.exe",
-      "preLaunchTask": "Windows Debug Template"
-    }
   ]
 }
