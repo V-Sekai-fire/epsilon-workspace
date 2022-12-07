@@ -3,21 +3,19 @@
   // for the documentation about the tasks.json format
   "version": "2.0.0",
   "options": {
-      "env": {
-        "SCONS_CACHE": "${workspaceFolder}/game/build/.cicd_cache"
-      }
-   },
+    "env": {
+      "SCONS_CACHE": "${workspaceFolder}/game/build/.cicd_cache"
+    }
+  },
   "tasks": [
     {
       "label": "Windows Debug",
       "type": "shell",
-      "command": "scons target=editor bits=64 werror=yes warnings=all dev_build=yes llvm=yes mingw=yes compiledb=yes warning=no test=yes debug_symbols=yes platform=windows bits=64 use_thinlto=no warnings=no  LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' debug_symbols=no custom_modules=../modules",
+      "command": "scons target=editor bits=64 werror=yes warnings=all dev_build=yes llvm=yes mingw=yes compiledb=yes test=yes debug_symbols=yes platform=windows bits=64 use_thinlto=no warnings=no LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' debug_symbols=no custom_modules=../modules",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "problemMatcher": [
-        "$gcc"
-      ],
+      "problemMatcher": ["$gcc"],
       "group": {
         "kind": "build",
         "isDefault": true
@@ -30,9 +28,7 @@
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "problemMatcher": [
-        "$gcc"
-      ]
+      "problemMatcher": ["$gcc"]
     },
     {
       "label": "Windows Release",
@@ -42,9 +38,7 @@
         "cwd": "${workspaceFolder}/godot"
       },
       "group": "build",
-      "problemMatcher": [
-        "$gcc"
-      ]
+      "problemMatcher": ["$gcc"]
     },
     {
       "label": "Windows Release Template",
@@ -53,9 +47,7 @@
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "problemMatcher": [
-        "$gcc"
-      ]
+      "problemMatcher": ["$gcc"]
     },
     {
       "label": "Javascript Release Template",
@@ -64,9 +56,7 @@
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "problemMatcher": [
-        "$gcc"
-      ],
+      "problemMatcher": ["$gcc"],
       "group": "build"
     }
   ]
