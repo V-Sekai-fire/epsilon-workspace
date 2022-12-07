@@ -37,7 +37,7 @@
     {
       "label": "Windows Release",
       "type": "shell",
-      "command": "scons optimize=speed werror=no platform=windows target=editor use_fastlto=no deprecated=no use_mingw=yes use_llvm=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-Wall -Wno-tautological-compare -g -gcodeview' debug_symbols=no custom_modules=../modules",
+      "command": "scons optimize=speed werror=no platform=windows target=editor use_fastlto=no use_mingw=yes use_llvm=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-Wall -Wno-tautological-compare -g -gcodeview' debug_symbols=no custom_modules=../modules",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
