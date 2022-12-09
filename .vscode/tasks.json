@@ -4,7 +4,7 @@
   "version": "2.0.0",
   "options": {
     "env": {
-      "SCONS_CACHE": "${workspaceFolder}/game/build/.cicd_cache"
+      // "SCONS_CACHE": "${workspaceFolder}/game/build/.cicd_cache"
     }
   },
   "tasks": [
@@ -26,7 +26,7 @@
     {
       "label": "Windows Debug",
       "type": "shell",
-      "command": "scons target=editor bits=64 werror=yes warnings=all dev_build=yes llvm=yes mingw=yes compiledb=yes test=yes debug_symbols=yes platform=windows bits=64 use_thinlto=no warnings=no custom_modules=../modules",
+      "command": "scons target=editor bits=64 dev_build=yes llvm=yes mingw=yes compiledb=yes test=yes debug_symbols=yes platform=windows bits=64 use_thinlto=no warnings=no custom_modules=../modules",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
@@ -41,7 +41,7 @@
     {
       "label": "Windows Debug Template",
       "type": "shell",
-      "command": "scons target=template_debug bits=64 use_mingw=yes use_llvm=yes werror=yes warnings=all dev_build=yes compiledb=yes warning=no test=yes debug_symbols=yes platform=windows bits=64 use_thinlto=no warnings=no  custom_modules=../modules",
+      "command": "scons target=template_debug bits=64 use_mingw=yes use_llvm=yes dev_build=yes compiledb=yes test=yes debug_symbols=yes platform=windows bits=64 use_thinlto=no warnings=no  custom_modules=../modules",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
@@ -64,7 +64,7 @@
     {
       "label": "Windows Release Template",
       "type": "shell",
-      "command": "scons target=template_release bits=64 use_mingw=yes use_llvm=yes werror=yes warnings=all dev_build=no compiledb=yes warning=no test=yes debug_symbols=yes platform=windows bits=64 use_thinlto=no warnings=no  custom_modules=../modules",
+      "command": "scons target=template_release bits=64 use_mingw=yes use_llvm=yes dev_build=no compiledb=yes  test=yes debug_symbols=yes platform=windows bits=64 use_thinlto=no warnings=no  custom_modules=../modules",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
@@ -75,7 +75,7 @@
     {
       "label": "Javascript Release Template",
       "type": "shell",
-      "command": "scons target=template_release bits=64 use_mingw=yes use_llvm=yes werror=yes warnings=all dev_build=no compiledb=yes warning=no test=yes debug_symbols=yes platform=web bits=64 use_thinlto=no warnings=no debug_symbols=no custom_modules=../modules",
+      "command": "scons target=template_release bits=64 use_mingw=yes use_llvm=yes dev_build=no compiledb=yes  test=yes debug_symbols=yes platform=web bits=64 use_thinlto=no warnings=no debug_symbols=no custom_modules=../modules",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
