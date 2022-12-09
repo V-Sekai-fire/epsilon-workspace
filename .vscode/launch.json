@@ -3,13 +3,19 @@
   // Hover to view descriptions of existing attributes.
   // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
+  "options": {
+    "env": {
+      "RUST_LOG": "info",      
+      "MVSQLITE_DATA_PLANE": "http://localhost:7000",
+    }
+  },
   "configurations": [
     {
       "name": "Build the editor release",
       "type": "cppvsdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "game", "-e"],
+      "args": ["--path", "modules/mvsqlite/demo", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.editor.x86_64.llvm.exe",
       "preLaunchTask": "Windows Release"
     },
@@ -18,7 +24,7 @@
       "type": "cppvsdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "game", "-e"],
+      "args": ["--path", "modules/mvsqlite/demo"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.editor.dev.x86_64.llvm.exe",
       "preLaunchTask": "Windows Debug"
     },

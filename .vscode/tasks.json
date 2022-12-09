@@ -9,73 +9,24 @@
   },
   "tasks": [
     {
-      "label": "Windows visual studio project",
-      "type": "shell",
-      "command": "scons vsproj=yes target=editor bits=64 dev_build=yes compiledb=yes test=yes debug_symbols=yes platform=windows bits=64 custom_modules=../modules",
-      "options": {
-        "cwd": "${workspaceFolder}/godot"
-      },
-      "problemMatcher": [
-        "$gcc"
-      ],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      }
-    },
-    {
-      "label": "Windows Debug",
-      "type": "shell",
-      "command": "scons target=editor bits=64 dev_build=yes llvm=yes mingw=yes compiledb=yes test=yes debug_symbols=yes platform=windows bits=64 use_thinlto=no warnings=no custom_modules=../modules",
-      "options": {
-        "cwd": "${workspaceFolder}/godot"
-      },
-      "problemMatcher": [
-        "$gcc"
-      ],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      }
-    },
-    {
-      "label": "Windows Debug Template",
-      "type": "shell",
-      "command": "scons target=template_debug bits=64 use_mingw=yes use_llvm=yes dev_build=yes compiledb=yes test=yes debug_symbols=yes platform=windows bits=64 use_thinlto=no warnings=no  custom_modules=../modules",
-      "options": {
-        "cwd": "${workspaceFolder}/godot"
-      },
-      "problemMatcher": [
-        "$gcc"
-      ]
-    },
-    {
       "label": "Windows Release",
       "type": "shell",
-      "command": "scons optimize=speed werror=no platform=windows target=editor use_fastlto=no use_mingw=yes use_llvm=yes custom_modules=../modules",
-      "options": {
-        "cwd": "${workspaceFolder}/godot"
-      },
-      "group": "build",
-      "problemMatcher": [
-        "$gcc"
-      ]
-    },
-    {
-      "label": "Windows Release Template",
-      "type": "shell",
-      "command": "scons target=template_release bits=64 use_mingw=yes use_llvm=yes dev_build=no compiledb=yes  test=yes debug_symbols=yes platform=windows bits=64 use_thinlto=no warnings=no  custom_modules=../modules",
+      "command": "scons werror=no platform=windows target=editor use_lto=no deprecated=no optimize=speed use_mingw=yes use_llvm=yes use_thinlto=no warnings=no LINKFLAGS='-Wl,-pdb=' CCFLAGS='-Wall -Wno-tautological-compare -g -gcodeview' debug_symbols=no custom_modules=../modules",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
       "problemMatcher": [
         "$gcc"
-      ]
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
     },
     {
       "label": "Javascript Release Template",
       "type": "shell",
-      "command": "scons target=template_release bits=64 use_mingw=yes use_llvm=yes dev_build=no compiledb=yes  test=yes debug_symbols=yes platform=web bits=64 use_thinlto=no warnings=no debug_symbols=no custom_modules=../modules",
+      "command": "scons target=template_release bits=64 use_mingw=yes use_llvm=yes dev_build=no compiledb=yes test=yes platform=web bits=64 debug_symbols=no custom_modules=../modules",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
