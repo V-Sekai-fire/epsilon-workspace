@@ -5,8 +5,8 @@
   "version": "0.2.0",
   "options": {
     "env": {
-      "RUST_LOG": "info",      
-      "MVSQLITE_DATA_PLANE": "http://localhost:7000",
+      "RUST_LOG": "error",      
+      "MVSQLITE_DATA_PLANE": "http://192.168.0.39:7000",
     }
   },
   "configurations": [
@@ -15,7 +15,7 @@
       "type": "cppvsdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "game", "-e"],
+      "args": ["--path", "modules/mvsqlite/demo", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.editor.x86_64.llvm.exe",
       "preLaunchTask": "Windows Release"
     },
@@ -24,7 +24,7 @@
       "type": "cppvsdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "game", "-e"],
+      "args": ["--path", "modules/mvsqlite/demo", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.editor.dev.x86_64.llvm.exe",
       "preLaunchTask": "Windows Debug"
     },

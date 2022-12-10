@@ -11,7 +11,7 @@
     {
       "label": "Windows Release",
       "type": "shell",
-      "command": "scons werror=no platform=windows use_module_mvsqlite=on target=editor use_lto=no deprecated=no optimize=speed use_mingw=yes use_llvm=yes use_thinlto=no warnings=no LINKFLAGS='-Wl,-pdb=' CCFLAGS='-Wall -Wno-tautological-compare -g -gcodeview' debug_symbols=no custom_modules=../modules",
+      "command": "scons werror=no platform=windows module_mvsqlite_enabled=yes use_module_mvsqlite=on target=editor use_lto=no deprecated=no optimize=speed use_mingw=yes use_llvm=yes use_thinlto=no warnings=no LINKFLAGS='-Wl,-pdb=' CCFLAGS='-Wall -Wno-tautological-compare -g -gcodeview' debug_symbols=no custom_modules=../modules",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
@@ -26,7 +26,7 @@
     {
       "label": "Javascript Release Template",
       "type": "shell",
-      "command": "scons target=template_release use_module_mvsqlite=on bits=64 use_mingw=yes use_llvm=yes dev_build=no compiledb=yes test=yes platform=web bits=64 debug_symbols=no custom_modules=../modules",
+      "command": "scons target=template_release module_mvsqlite_enabled=yes bits=64 use_mingw=yes use_llvm=yes dev_build=no compiledb=yes test=yes platform=web bits=64 debug_symbols=no custom_modules=../modules",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
