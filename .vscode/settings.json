@@ -132,5 +132,6 @@
     "python.formatting.provider": "black",
     "cmake.configureOnOpen": true,
     "telemetry.enableCrashReporter": false,
-    "sonarlint.pathToCompileCommands": "${workspaceFolder}\\godot\\compile_commands.json"
+    "sonarlint.pathToCompileCommands": "${workspaceFolder}\\godot\\compile_commands.json",
+    "git.ignoreLimitWarning": true
 }

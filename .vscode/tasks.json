@@ -22,21 +22,6 @@
         "kind": "build",
         "isDefault": true
       }
-    },
-    {
-      "label": "Windows Release MSVC",
-      "type": "shell",
-      "command": "scons vsproj=yes werror=yes platform=windows module_mvsqlite_enabled=yes use_module_mvsqlite=on target=editor use_lto=no deprecated=no optimize=speed custom_modules=../modules",
-      "options": {
-        "cwd": "${workspaceFolder}/godot"
-      },
-      "problemMatcher": [
-        "$gcc"
-      ],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      }
-    },
+    }
   ]
 }
