@@ -12,7 +12,7 @@
   "configurations": [
     {
       "name": "Build the Windows editor debug",
-      "type": "llvm",
+      "type": "cppvsdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "args": ["--path", "game", "-e"],
