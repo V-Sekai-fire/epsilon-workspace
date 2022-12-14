@@ -26,7 +26,7 @@
     {
       "label": "Macos Release",
       "type": "shell",
-      "command": "scons werror=yes platform=macos dev_build=no module_mvsqlite_enabled=yes use_module_mvsqlite=on target=editor use_lto=no deprecated=no use_mingw=yes use_llvm=yes use_thinlto=no warnings=no LINKFLAGS='-Wl,-pdb=' CCFLAGS='-Wall -Wno-tautological-compare -g -gcodeview' debug_symbols=no custom_modules=../modules",
+      "command": "scons werror=yes platform=macos dev_build=no module_mvsqlite_enabled=yes use_module_mvsqlite=on target=editor use_lto=no deprecated=no use_mingw=yes use_llvm=yes use_thinlto=no warnings=no custom_modules=../modules",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
