@@ -10,3 +10,7 @@
 	path = game
 	url = https://github.com/V-Sekai/v-sekai-game.git
 	branch = main
+[submodule "avatar"]
+	path = avatar
+	url = https://github.com/V-Sekai/v-sekai-game.git
+	branch = master
