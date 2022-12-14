@@ -12,5 +12,5 @@
 	branch = main
 [submodule "avatar"]
 	path = avatar
-	url = https://github.com/V-Sekai/v-sekai-game.git
+	url = https://github.com/V-Sekai/avatar_vr_demo.git
 	branch = master
