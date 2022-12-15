@@ -15,8 +15,8 @@
       "type": "cppvsdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "game", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.x86_64.llvm.exe",
+      "args": ["--path", "avatar_demo", "--xr-mode", "on"],
+      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.x86_64.llvm.console.exe",
       "preLaunchTask": "Windows Release"
     },
     {
@@ -25,7 +25,7 @@
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "args": ["--path", "game", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.x86_64.llvm.exe",
+      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.x86_64",
       "preLaunchTask": "Macos Release"
     },
   ]
