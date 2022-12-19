@@ -14,8 +14,3 @@
 	path = avatar_demo
 	url = https://github.com/V-Sekai/avatar_collider_vr_demo.git
 	branch = master
-[submodule "net"]
-	path = net_demo
-	url = https://github.com/V-Sekai/net_demo.git
-	branch = master
-
