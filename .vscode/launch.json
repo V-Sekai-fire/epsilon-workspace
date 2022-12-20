@@ -16,7 +16,7 @@
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "args": ["--path", "game", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.x86_64.llvm.console.exe",
+      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.x86_64.llvm.exe",
       "preLaunchTask": "Windows Release"
     },
     {
@@ -25,7 +25,7 @@
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "args": ["--path", "game", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.x86_64",
+      "program": "${workspaceFolder}/godot/bin/godot.macos.editor.x86_64",
       "preLaunchTask": "Macos Release"
     },
   ]
