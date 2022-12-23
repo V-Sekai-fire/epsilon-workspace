@@ -9,19 +9,27 @@
   },
   "tasks": [
     {
+      "label": "Windows Release MSVC",
+      "type": "shell",
+      "command": "scons werror=no platform=windows vsproj=yes dev_build=yes module_mvsqlite_enabled=yes custom_modules=../modules",
+      "options": {
+        "cwd": "${workspaceFolder}/godot"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
       "label": "Windows Release",
       "type": "shell",
-      "command": "scons werror=yes platform=windows dev_build=no module_mvsqlite_enabled=yes use_module_mvsqlite=on target=editor use_lto=no deprecated=no use_mingw=yes use_llvm=yes use_thinlto=no warnings=no LINKFLAGS='-Wl,-pdb=' CCFLAGS='-Wall -Wno-tautological-compare -g -gcodeview' debug_symbols=no custom_modules=../modules",
+      "command": "scons werror=yes platform=windows dev_build=no module_mvsqlite_enabled=yes target=editor use_lto=no deprecated=no use_mingw=yes use_llvm=yes use_thinlto=no warnings=no LINKFLAGS='-Wl,-pdb=' CCFLAGS='-Wall -Wno-tautological-compare -g -gcodeview' debug_symbols=no custom_modules=../modules",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
       "problemMatcher": [
         "$gcc"
       ],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      }
     },
     {
       "label": "Macos Release",
@@ -33,10 +41,6 @@
       "problemMatcher": [
         "$gcc"
       ],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      }
     }
   ]
 }

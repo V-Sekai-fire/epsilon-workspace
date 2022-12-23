@@ -11,16 +11,25 @@
   },
   "configurations": [
     {
-      "name": "Build the Windows editor debug",
+      "name": "Build the Windows editor",
       "type": "cppvsdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "game", "-e"],
+      "args": ["--path", "modules/sqlite/demo", "-e"],
+      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.x86_64.exe",
+      "preLaunchTask": "Windows Release MSVC"
+    },
+    {
+      "name": "Build the Windows editor MSVC",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "args": ["--path", "modules/sqlite/demo", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.editor.x86_64.llvm.exe",
       "preLaunchTask": "Windows Release"
     },
     {
-      "name": "Build the Macos editor debug",
+      "name": "Build the Macos editor",
       "type": "llvm",
       "request": "launch",
       "cwd": "${workspaceFolder}",
