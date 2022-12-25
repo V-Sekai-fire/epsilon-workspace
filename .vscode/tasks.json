@@ -9,9 +9,9 @@
   },
   "tasks": [
     {
-      "label": "Windows Release",
+      "label": "Remove bin",
       "type": "shell",
-      "command": "scons werror=yes platform=windows dev_build=yes custom_modules=../modules",
+      "command": "rm -r bin",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
@@ -24,14 +24,36 @@
       }
     },
     {
-      "label": "Windows Release MSVC",
+      "label": "Windows Release Dev",
       "type": "shell",
-      "command": "scons werror=no platform=windows vsproj=yes dev_build=yes custom_modules=../modules",
+      "command": "scons werror=yes platform=windows dev_build=yes module_mvsqlite_enabled=yes target=editor use_lto=no deprecated=no use_mingw=yes use_llvm=yes use_thinlto=no warnings=no LINKFLAGS='-Wl,-pdb=' CCFLAGS='-Wall -Wno-tautological-compare -g -gcodeview' debug_symbols=no custom_modules=../modules",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "group": "build",
-      "problemMatcher": []
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "dependsOn": ["Remove bin"],
+    },
+    {
+      "label": "Windows Release",
+      "type": "shell",
+      "command": "scons werror=yes platform=windows dev_build=no module_mvsqlite_enabled=yes target=editor use_lto=no deprecated=no use_mingw=yes use_llvm=yes use_thinlto=no warnings=no LINKFLAGS='-Wl,-pdb=' CCFLAGS='-Wall -Wno-tautological-compare -g -gcodeview' debug_symbols=no custom_modules=../modules",
+      "options": {
+        "cwd": "${workspaceFolder}/godot"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "dependsOn": ["Remove bin"],
     },
     {
       "label": "Macos Release",
@@ -42,7 +64,8 @@
       },
       "problemMatcher": [
         "$gcc"
-      ]
+      ],
+      "dependsOn": ["Remove bin"],
     }
   ]
 }

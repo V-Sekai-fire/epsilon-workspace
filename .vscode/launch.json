@@ -11,13 +11,23 @@
   },
   "configurations": [
     {
+      "name": "Build the Windows editor dev",
+      "type": "cppvsdbg",
+      "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "args": ["--path", "C:/Users/ernes/Documents/TEST_many_bone_ik", "-e"],
+      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.dev.x86_64.llvm.exe",
+      "preLaunchTask": "Windows Release Dev"
+    },
+    {
       "name": "Build the Windows editor",
       "type": "cppvsdbg",
       "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "args": ["--path", "C:/Users/ernes/Documents/TEST_many_bone_ik", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.dev.x86_64.exe",
+      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.x86_64.llvm.exe",
       "preLaunchTask": "Windows Release"
     },
     {
