@@ -9,21 +9,6 @@
   },
   "tasks": [
     {
-      "label": "Remove bin",
-      "type": "shell",
-      "command": "rm -r bin",
-      "options": {
-        "cwd": "${workspaceFolder}/godot"
-      },
-      "problemMatcher": [
-        "$gcc"
-      ],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      }
-    },
-    {
       "label": "Windows Release Dev",
       "type": "shell",
       "command": "scons werror=yes platform=windows dev_build=yes module_mvsqlite_enabled=yes target=editor use_lto=no deprecated=no use_mingw=yes use_llvm=yes use_thinlto=no warnings=no LINKFLAGS='-Wl,-pdb=' CCFLAGS='-Wall -Wno-tautological-compare -g -gcodeview' debug_symbols=no custom_modules=../modules",
@@ -37,7 +22,6 @@
         "kind": "build",
         "isDefault": true
       },
-      "dependsOn": ["Remove bin"],
     },
     {
       "label": "Windows Release",
@@ -53,7 +37,6 @@
         "kind": "build",
         "isDefault": true
       },
-      "dependsOn": ["Remove bin"],
     },
     {
       "label": "Macos Release",
@@ -65,7 +48,6 @@
       "problemMatcher": [
         "$gcc"
       ],
-      "dependsOn": ["Remove bin"],
     }
   ]
 }
