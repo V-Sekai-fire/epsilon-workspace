@@ -26,7 +26,7 @@
     {
       "label": "Windows Release",
       "type": "shell",
-      "command": "scons werror=no compiledb=yes platform=windows precision=double vsproj=yes custom_modules=../modules",
+      "command": "scons werror=no compiledb=yes platform=windows precision=double custom_modules=../modules",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
