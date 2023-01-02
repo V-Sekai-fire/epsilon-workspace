@@ -17,7 +17,7 @@
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "args": ["--path", "C:/Users/ernes/Documents/TEST_many_bone_ik", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.dev.x86_64.llvm.exe",
+      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.x86_64.llvm.exe",
       "preLaunchTask": "Windows"
     },
   ]
