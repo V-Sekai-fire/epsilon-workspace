@@ -9,15 +9,13 @@
   },
   "tasks": [
     {
-      "label": "Windows",
+      "label": "Linux",
       "type": "shell",
-      "command": "scons werror=no platform=windows compiledb=yes dev_build=no module_mvsqlite_enabled=yes target=editor use_mingw=yes use_llvm=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-Wall -Wno-tautological-compare -g -gcodeview' custom_modules=../modules",
+      "command": "scons-3 werror=no dev_build=no target=editor use_mingw=yes use_llvm=yes custom_modules=../modules",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "problemMatcher": [
-        "$gcc"
-      ],
+      "problemMatcher": [],
       "group": {
         "kind": "build",
         "isDefault": true

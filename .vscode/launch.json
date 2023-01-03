@@ -12,13 +12,13 @@
   "configurations": [
     {
       "name": "Build the Windows editor",
-      "type": "cppvsdbg",
+      "type": "llvm",
       "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "args": ["--path", "game", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.x86_64.llvm.exe",
-      "preLaunchTask": "Windows"
+      "program": "${workspaceFolder}/godot/bin/godot.linux.editor.x86_64.llvm",
+      "preLaunchTask": "Linux"
     },
   ]
 }
