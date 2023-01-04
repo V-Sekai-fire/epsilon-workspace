@@ -12,12 +12,11 @@
   "configurations": [
     {
       "name": "Build the Windows editor",
-      "type": "llvm",
-      "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
+      "type": "lldb",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "game", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.linux.editor.x86_64.llvm",
+      "args": ["--path", "/home/elee/Projects/TEST_many_bone_ik", "-e"],
+      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.editor.dev.x86_64.llvm",
       "preLaunchTask": "Linux"
     },
   ]
