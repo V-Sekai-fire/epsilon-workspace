@@ -6,7 +6,3 @@
 	path = modules
 	url = https://github.com/V-Sekai/godot-modules-groups.git
 	branch = main
-[submodule "game"]
-	path = game
-	url = https://github.com/V-Sekai/v-sekai-game.git
-	branch = main
