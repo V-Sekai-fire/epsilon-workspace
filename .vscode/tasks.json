@@ -5,7 +5,7 @@
   "options": {
     "env": {
       "CARGO_NET_GIT_FETCH_WITH_CLI": "true",
-      "SCONS_CACHE": "${workspaceFolder}/game/build/.cicd_cache"
+      // "SCONS_CACHE": "${workspaceFolder}/game/build/.cicd_cache"
     }
   },
   "tasks": [
