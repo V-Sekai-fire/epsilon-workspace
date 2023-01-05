@@ -16,7 +16,7 @@
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "args": ["--path", "/home/elee/Projects/TEST_many_bone_ik", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.editor.dev.x86_64.llvm",
+      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.editor.x86_64.llvm",
       "preLaunchTask": "Linux"
     },
   ]
