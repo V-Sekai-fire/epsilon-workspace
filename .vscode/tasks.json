@@ -12,7 +12,7 @@
     {
       "label": "Linux",
       "type": "shell",
-      "command": "scons werror=no compiledb=yes dev_build=no use_static_cpp=false target=editor use_mingw=yes use_llvm=yes custom_modules=../modules/",
+      "command": "scons werror=no compiledb=yes dev_build=yes use_static_cpp=false target=editor custom_modules=../modules/",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
