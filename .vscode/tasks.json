@@ -12,7 +12,7 @@
     {
       "label": "Godot",
       "type": "shell",
-      "command": "scons werror=no compiledb=yes optimze=speed_trace dev_build=no target=editor custom_modules=../modules/",
+      "command": "scons werror=no compiledb=yes precision=double optimze=speed_trace dev_build=no target=editor custom_modules=../modules/",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
