@@ -15,7 +15,8 @@
       "type": "lldb",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "program": "${workspaceFolder}/godot/bin/godot.macos.editor.dev.x86_64",
+      "args": ["--path", "/Users/ernest.lee/Documents/v-sekai-game", "-e"],
+      "program": "${workspaceFolder}/godot/bin/godot.macos.editor.x86_64",
       "preLaunchTask": "Godot"
     },
   ]
