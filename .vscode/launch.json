@@ -12,12 +12,11 @@
   "configurations": [
     {
       "name": "Build the editor",
-      "type": "cppvsdbg",
+      "type": "lldb",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "C:/Users/ernes/Documents/test_ik", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.dev.x86_64",
-      "preLaunchTask": "Linux"
+      "program": "${workspaceFolder}/godot/bin/godot.macos.editor.dev.x86_64",
+      "preLaunchTask": "Godot"
     },
   ]
 }

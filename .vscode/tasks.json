@@ -10,9 +10,9 @@
   },
   "tasks": [
     {
-      "label": "Linux",
+      "label": "Godot",
       "type": "shell",
-      "command": "scons werror=no compiledb=yes dev_build=yes use_static_cpp=false target=editor custom_modules=../modules/ use_mingw=yes use_llvm=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-Wall -Wno-tautological-compare -g -gcodeview'",
+      "command": "scons werror=no compiledb=yes dev_build=yes target=editor custom_modules=../modules/",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
