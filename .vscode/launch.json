@@ -15,7 +15,7 @@
       "type": "cppvsdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "V:/v-sekai-game", "-e", "--xr-mode", "off"],
+      "args": ["--path", "V:/TEST_many_bone_ik", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.editor.dev.double.x86_64",
       "preLaunchTask": "Godot"
     },
