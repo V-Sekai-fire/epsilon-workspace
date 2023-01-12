@@ -14,8 +14,9 @@
       "name": "Build the editor",
       "type": "cppvsdbg",
       "request": "launch",
+      "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "V:/TEST_many_bone_ik", "-e"],
+      "args": ["--path", "V:/epsilon-workspace/modules/subdiv/project", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.editor.dev.double.x86_64",
       "preLaunchTask": "Godot"
     },
