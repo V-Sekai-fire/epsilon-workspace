@@ -16,8 +16,8 @@
       "request": "launch",
       "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "V:/v-sekai-game", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.dev.double.x86_64.llvm",
+      "args": ["--path", "V:/epsilon-workspace/modules/subdiv/project", "-e"],
+      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.double.x86_64.llvm",
       "preLaunchTask": "Godot"
     },
   ]
