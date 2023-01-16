@@ -12,9 +12,8 @@
   "configurations": [
     {
       "name": "Build the editor",
-      "type": "cppvsdbg",
+      "type": "lldb",
       "request": "launch",
-      "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
       "cwd": "${workspaceFolder}",
       "args": ["--path", "V:/epsilon-workspace/modules/subdiv/project", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.editor.double.x86_64.llvm",
