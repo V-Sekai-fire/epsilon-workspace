@@ -12,7 +12,7 @@
   "configurations": [
     {
       "name": "Build the editor",
-      "type": "lldb",
+      "type": "cppdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "args": ["--path", "../v-sekai-game", "-e"],
