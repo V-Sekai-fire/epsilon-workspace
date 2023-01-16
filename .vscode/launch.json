@@ -15,8 +15,8 @@
       "type": "lldb",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "V:/epsilon-workspace/modules/subdiv/project", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.double.x86_64.llvm",
+      "args": ["--path", "../v-sekai-game", "-e"],
+      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.dev.double.x86_64.llvm",
       "preLaunchTask": "Godot"
     },
   ]

@@ -5,7 +5,7 @@
   "options": {
     "env": {
       "RUSTFLAGS": "-C linker=clang",
-      "CARGO_NET_GIT_FETCH_WITH_CLI": "true",
+      "CARGO_NET_GIT_FETCH_WITH_CLI": "true"
       // "SCONS_CACHE": "${workspaceFolder}/game/build/.cicd_cache"
     }
   },
@@ -13,13 +13,13 @@
     {
       "label": "Godot",
       "type": "shell",
-      "command": "scons werror=no tests=yes dev_build=no compiledb=yes use_llvm=yes use_mingw=yes precision=double target=editor custom_modules=../modules/",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "problemMatcher": [
-        "$gcc"
+      "command": [
+        "scons werror=no tests=yes dev_build=yes compiledb=yes use_llvm=yes use_mingw=yes precision=double target=editor custom_modules=../modules/"
       ],
+      "problemMatcher": [],
       "group": {
         "kind": "build",
         "isDefault": true
