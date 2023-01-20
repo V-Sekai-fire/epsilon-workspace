@@ -12,11 +12,11 @@
   "configurations": [
     {
       "name": "Build the editor",
-      "type": "cppdbg",
+      "type": "cppvsdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "../v-sekai-game", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.dev.double.x86_64.llvm",
+      "args": ["--path", "../TEST_many_bone_ik", "-e"],
+      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.x86_64.llvm.exe",
       "preLaunchTask": "Godot"
     },
   ]

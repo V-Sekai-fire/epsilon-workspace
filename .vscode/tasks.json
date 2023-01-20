@@ -17,9 +17,11 @@
         "cwd": "${workspaceFolder}/godot"
       },
       "command": [
-        "scons werror=no tests=yes dev_build=yes compiledb=yes use_llvm=yes use_mingw=yes precision=double target=editor custom_modules=../modules/"
+        "scons werror=no compiledb=yes dev_build=no optimize=speed_trace use_static_cpp=false target=editor custom_modules=../modules/ use_mingw=yes use_llvm=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-Wall -Wno-tautological-compare -g -gcodeview'"
       ],
-      "problemMatcher": [],
+      "problemMatcher": [
+        "$gcc"
+      ],
       "group": {
         "kind": "build",
         "isDefault": true
