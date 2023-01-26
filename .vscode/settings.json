@@ -127,7 +127,11 @@
         "__bits": "cpp",
         "__verbose_abort": "cpp",
         "spmemvfs.h": "c",
-        "stdint.h": "c"
+        "stdint.h": "c",
+        "sqlite3.h": "c",
+        "stdlib.h": "c",
+        "sqlite.h": "c",
+        "mvsqlite.h": "c"
     },
     "python.formatting.provider": "black",
     "cmake.configureOnOpen": true,
