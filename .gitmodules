@@ -2,5 +2,3 @@
 	path = godot
 	url = https://github.com/V-Sekai/godot.git
 	branch = groups-4.x
-[submodule "modules"]
-	url = https://github.com/V-Sekai/godot-modules-groups.git
