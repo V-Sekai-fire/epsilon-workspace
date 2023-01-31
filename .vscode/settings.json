@@ -131,7 +131,8 @@
         "sqlite3.h": "c",
         "stdlib.h": "c",
         "sqlite.h": "c",
-        "mvsqlite.h": "c"
+        "mvsqlite.h": "c",
+        "version": "cpp"
     },
     "python.formatting.provider": "black",
     "cmake.configureOnOpen": true,
