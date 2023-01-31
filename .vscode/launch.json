@@ -14,9 +14,10 @@
       "name": "Build the editor",
       "type": "cppvsdbg",
       "request": "launch",
+      "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "C:/Users/ernes/Documents/epsilon-workspace/modules/mvsqlite/demo", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.x86_64.llvm.exe",
+      "args": ["--path", "modules/mvsqlite/demo", "-e"],
+      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.dev.double.x86_64.llvm.exe",
       "preLaunchTask": "Godot"
     },
   ]
