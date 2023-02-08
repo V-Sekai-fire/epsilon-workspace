@@ -14,7 +14,7 @@
       "name": "Build the editor",
       "type": "cppvsdbg",
       "request": "launch",
-      "args": ["--path", "C:/Users/ernes/Downloads/Test Game Project", "-e"],
+      "args": ["--path", "../v-sekai-game", "-e"],
       "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
       "cwd": "${workspaceFolder}",
       "program": "${workspaceFolder}/godot/bin/godot.windows.editor.dev.double.x86_64.llvm.exe",
