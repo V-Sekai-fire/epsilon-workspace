@@ -1,6 +1,6 @@
 sudo apt install build-essential scons pkg-config libx11-dev libxcursor-dev libxinerama-dev \
     libgl1-mesa-dev libglu-dev libasound2-dev libpulse-dev libudev-dev libxi-dev libxrandr-dev yasm \
-    binutils git-lfs scons
+    binutils git-lfs scons clang
 sudo mkdir /opt/llvm-mingw 
 sudo curl -L https://github.com/mstorsjo/llvm-mingw/releases/download/20220906/llvm-mingw-20220906-ucrt-ubuntu-18.04-x86_64.tar.xz | sudo tar -Jxf - --strip 1 -C /opt/llvm-mingw
 sudo git clone https://github.com/emscripten-core/emsdk /opt/emsdk && sudo /opt/emsdk/emsdk install latest && sudo /opt/emsdk/emsdk activate latest && sudo curl -L -o ispc.tgz 'https://github.com/ispc/ispc/releases/download/v1.15.0/ispc-v1.15.0-linux.tar.gz' && tar -zxf ispc.tgz ispc-v1.15.0-linux/bin/ispc && sudo mv ispc-v1.15.0-linux/bin/ispc /usr/local/bin/ispc && rmdir -p ispc-v1.15.0-linux/bin

@@ -11,7 +11,7 @@
   },
   "tasks": [
     {
-      "label": "Godot",
+      "label": "Godot Windows",
       "type": "shell",
       "options": {
         "cwd": "${workspaceFolder}/godot"
@@ -19,9 +19,19 @@
       "command": [
         "scons werror=yes compiledb=yes precision=double dev_build=yes optimize=speed_trace use_static_cpp=false target=editor custom_modules=../modules/ use_mingw=yes use_llvm=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-Wall -Wno-tautological-compare -g -gcodeview'"
       ],
-      "problemMatcher": [
-        "$gcc"
+      "problemMatcher": [],
+      "group": "build"
+    },
+    {
+      "label": "Godot Popos",
+      "type": "shell",
+      "options": {
+        "cwd": "${workspaceFolder}/godot"
+      },
+      "command": [
+        "scons werror=yes compiledb=yes precision=double dev_build=no optimize=speed_trace use_static_cpp=false target=editor custom_modules=../modules/"
       ],
+      "problemMatcher": [],
       "group": {
         "kind": "build",
         "isDefault": true
@@ -36,13 +46,7 @@
       "command": [
         "scons platform=web target=editor precision=double production=yes custom_modules=../modules/"
       ],
-      "problemMatcher": [
-        "$gcc"
-      ],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      }
+      "problemMatcher": []
     }
   ]
 }
