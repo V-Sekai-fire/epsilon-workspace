@@ -17,7 +17,7 @@
         "cwd": "${workspaceFolder}/godot"
       },
       "command": [
-        "scons werror=yes compiledb=yes precision=double dev_build=yes optimize=speed_trace use_static_cpp=false target=editor custom_modules=../modules/ use_mingw=yes use_llvm=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-Wall -Wno-tautological-compare -g -gcodeview'"
+        "scons werror=no compiledb=yes precision=double dev_build=yes optimize=speed_trace use_static_cpp=false target=editor custom_modules=../modules/ use_mingw=yes use_llvm=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-Wall -Wno-tautological-compare -g -gcodeview'"
       ],
       "problemMatcher": [],
       "group": "build"
@@ -29,7 +29,7 @@
         "cwd": "${workspaceFolder}/godot"
       },
       "command": [
-        "scons werror=yes compiledb=yes precision=double dev_build=no optimize=speed_trace use_static_cpp=false target=editor custom_modules=../modules/"
+        "scons werror=no compiledb=yes precision=double dev_build=no optimize=speed_trace use_static_cpp=false target=editor custom_modules=../modules/"
       ],
       "problemMatcher": [],
       "group": {
