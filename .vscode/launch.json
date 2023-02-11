@@ -18,7 +18,7 @@
       "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
       "cwd": "${workspaceFolder}",
       "program": "${workspaceFolder}/godot/bin/godot.windows.editor.double.x86_64",
-      "preLaunchTask": "Godot Popos"
+      "preLaunchTask": "Godot Windows"
     },
   ]
 }
