@@ -12,13 +12,12 @@
   "configurations": [
     {
       "name": "Build the editor",
-      "type": "cppvsdbg",
+      "type": "lldb",
       "request": "launch",
       "args": ["--path", "../v-sekai-game", "-e"],
-      "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
       "cwd": "${workspaceFolder}",
-      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.double.x86_64.llvm.exe",
-      "preLaunchTask": "Godot Windows"
+      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.editor.double.x86_64.llvm",
+      "preLaunchTask": "Godot Linuxbsd"
     },
   ]
 }
