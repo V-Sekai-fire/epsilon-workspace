@@ -24,6 +24,37 @@
         "kind": "build",
         "isDefault": true
       }
-    }
+    },
+    {
+      "label": "Godot Web Editor",
+      "type": "shell",
+      "options": {
+        "cwd": "${workspaceFolder}/godot"
+      },
+      "command": [
+        "scons verbose=no warnings=extra p=web target=editor debug_symbols=true werror=yes compiledb=yes precision=double dev_build=no use_static_cpp=false target=editor custom_modules=../modules/ use_llvm=yes"
+      ],
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Godot Web Game",
+      "type": "shell",
+      "options": {
+        "cwd": "${workspaceFolder}/godot"
+      },
+      "command": [
+        "scons verbose=no warnings=extra p=web target=template_release debug_symbols=true werror=yes compiledb=yes precision=double dev_build=no use_static_cpp=false target=editor custom_modules=../modules/ use_llvm=yes"
+      ],
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    
   ]
 }
