@@ -17,7 +17,7 @@
       // "args": ["--path", "../v-sekai-game", "-e"],
       "cwd": "${workspaceFolder}",
       "program": "${workspaceFolder}/godot/bin/godot.windows.editor.double.x86_64",
-      "preLaunchTask": "Godot Linuxbsd"
+      "preLaunchTask": "Godot Windows"
     },
   ]
 }
