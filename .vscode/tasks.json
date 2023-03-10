@@ -4,9 +4,6 @@
   "version": "2.0.0",
   "options": {
     "env": {
-      "RUSTFLAGS": "-C linker=clang",
-      "CARGO_NET_GIT_FETCH_WITH_CLI": "true"
-      // "SCONS_CACHE": "${workspaceFolder}/.cicd_cache",
     }
   },
   "tasks": [
@@ -17,22 +14,7 @@
         "cwd": "${workspaceFolder}/godot"
       },
       "command": [
-        "scons verbose=no warnings=extra werror=yes compiledb=yes precision=double dev_build=no optimize=speed_trace use_static_cpp=false target=editor custom_modules=../modules/ use_mingw=yes use_llvm=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-Wall -Wno-tautological-compare -g -gcodeview'"
-      ],
-      "problemMatcher": [],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      }
-    },
-    {
-      "label": "Godot Web Game",
-      "type": "shell",
-      "options": {
-        "cwd": "${workspaceFolder}/godot"
-      },
-      "command": [
-        "scons verbose=no warnings=extra p=web target=template_release debug_symbols=true werror=yes compiledb=yes precision=double dev_build=no use_static_cpp=false target=editor custom_modules=../modules/ use_llvm=yes"
+        "scons verbose=no vsproj=yes warnings=extra werror=yes compiledb=yes precision=double dev_build=yes optimize=speed_trace use_static_cpp=false target=editor custom_modules=../modules/"
       ],
       "problemMatcher": [],
       "group": {

@@ -138,5 +138,6 @@
     "cmake.configureOnOpen": true,
     "telemetry.enableCrashReporter": false,
     "sonarlint.pathToCompileCommands": "${workspaceFolder}\\godot\\compile_commands.json",
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "cmake.sourceDirectory": "${workspaceFolder}/godot/platform/android/java/nativeSrcsConfigs"
 }
