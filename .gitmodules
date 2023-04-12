@@ -9,3 +9,6 @@
 [submodule "casync-v-sekai-game"]
 	path = casync-v-sekai-game
 	url = https://github.com/V-Sekai/casync-v-sekai-game.git
+[submodule "v-sekai-game"]
+	path = v-sekai-game
+	url = https://github.com/V-Sekai/v-sekai-game.git
