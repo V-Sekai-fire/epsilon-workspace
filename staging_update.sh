@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 
-cd godot
-sl pull --bookmark groups-staging-4.x -f
-cd -
+git subrepo clean godot
+git subrepo clone --branch=groups-4.x https://github.com/V-Sekai/godot.git godot --force
